@@ -1,3 +1,7 @@
 @use "assets/scss/reset";
+@use "assets/scss/variables";
 @use "assets/scss/typography";
 @use "assets/scss/header";
+
+@use "assets/scss/blocks/block-intro.scss";
+@use "assets/scss/blocks/block-location.scss";

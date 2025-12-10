@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+.block-location {
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+
+    &__inner {
+        background-color: $primaryColor;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__map {
+        iframe {}
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        margin: 100px;
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            text-align: start;
+        }
+    }
+}

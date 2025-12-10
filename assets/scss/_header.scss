@@ -1,12 +1,13 @@
+@use "variables" as *;
+
 .header {
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
-  padding: 5px
-    20px;
+  background-color: $primaryColor;
+  padding: 5px 20px;
 
   &__title {
     color: #fff;
@@ -17,11 +18,16 @@
     width: 80px;
     height: 80px;
     object-fit: contain;
+    opacity: 0;
+    transition: all ease 0.5s;
+
+    &.show {
+      opacity: 1;
+    }
   }
 
-  @media (min-width: 1280px) {
-    padding: 20px
-      30px;
+  @media (min-width: $breakpoint-lg) {
+    padding: 20px 30px;
 
     &__logo {
       width: 100px;
