@@ -23,21 +23,49 @@
 
 <body>
     <header class="header">
-        <h1 class="header__title h2">Cumple Martín</h1>
+
+        <div class="header__hamburger" id="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="header__menu" id="menu">
+            <ul>
+                <li class="h5">
+                    <a href="#divided-content">El Festejado</a>
+                </li>
+                <li class="h5">
+                    <a href="#location">¿Onde es?</a>
+                </li>
+                <li class="h5">
+                    <a href="#photo-slider">Fotos</a>
+                </li>
+            </ul>
+        </div>
 
         <img src="https://raw.githubusercontent.com/mediosiglomartin/inicio/refs/heads/main/assets/images/muuuzinger-z.svg"
             alt="Muuuzinger Z" class="header__logo">
     </header>
 
     <section class="block-intro">
-        <div class="block-intro__inner">
-            <div class="block-intro__image">
-                <img src="https://raw.githubusercontent.com/mediosiglomartin/inicio/refs/heads/main/assets/images/muuuzinger-z.svg"
-                    alt="Muuuzinger Z">
-            </div>
-            <div class="block-intro__content">
-                <h3 class="h1">¡Cumpleaños 50 de La Vaca!</h3>
-                <p>Acompáñanos a celebrar el medio siglo de Martín</p>
+        <div class="block-intro__background">
+            <video
+                src="https://raw.githubusercontent.com/mediosiglomartin/inicio/refs/heads/main/assets/videos/mazinger-z-intro.mp4"
+                autoplay loop muted playsinline preload="auto">
+                Mazinger Z intro
+            </video>
+        </div>
+        <div class="block-intro__container">
+            <div class="block-intro__inner">
+                <div class="block-intro__image">
+                    <img src="https://raw.githubusercontent.com/mediosiglomartin/inicio/refs/heads/main/assets/images/muuuzinger-z.svg"
+                        alt="Muuuzinger Z">
+                </div>
+                <div class="block-intro__content">
+                    <h3 class="h1">¡Cumpleaños 50 de La Vaca!</h3>
+                    <p>Acompáñanos a celebrar el medio siglo de Martín.</p>
+                </div>
             </div>
         </div>
     </section>
