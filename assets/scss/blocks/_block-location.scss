@@ -6,7 +6,7 @@
     margin: 20px;
 
     &__inner {
-        background-color: $primaryColor;
+        background-color: $tertiaryColor;
         max-width: 1200px;
         margin: 0 auto;
     }
@@ -14,6 +14,8 @@
     &__map {
         iframe {}
     }
+
+    &__info {}
 
     @media (min-width: $breakpoint-lg) {
         margin: 100px;
