@@ -37,4 +37,15 @@ $(document).ready(function () {
             }, 600);
         }
     });
+
+    $('.block-photo-slider .inner').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        speed: 5000,
+        cssEase: 'linear',
+    });
 });

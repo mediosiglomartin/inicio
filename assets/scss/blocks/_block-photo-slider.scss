@@ -1,0 +1,11 @@
+@use "../variables" as *;
+
+.block-photo-slider {
+
+    &__inner {
+        img {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+    }
+}

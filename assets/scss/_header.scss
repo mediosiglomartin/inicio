@@ -14,9 +14,9 @@
     margin-bottom: -90px;
 
     &.show {
-        background-color: $primaryColor;
-        //background-color: rgba($primaryColor, 0.9);
-        //backdrop-filter: blur(7px);
+        //background-color: $primaryColor;
+        background-color: rgba($primaryColor, 0.9);
+        backdrop-filter: blur(7px);
 
         .header__logo {
             opacity: 1;
@@ -48,7 +48,9 @@
             top: 90px;
             left: 0;
             width: 100%;
-            background-color: $primaryColor;
+            //background-color: $primaryColor;
+            background-color: rgba($primaryColor, 0.9);
+            backdrop-filter: blur(7px);
         }
 
         ul {
