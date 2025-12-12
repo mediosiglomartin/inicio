@@ -33,7 +33,7 @@ $(document).ready(function () {
         if (target.length) {
             e.preventDefault();
             $('html, body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - 120
             }, 600);
         }
     });
