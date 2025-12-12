@@ -35,7 +35,7 @@ h6,
     font-family: "Oxanium", sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     color: $secondaryColor;
 }
 
@@ -49,6 +49,7 @@ h1,
 
     @media (min-width: $breakpoint-lg) {
         font-size: 7rem;
+        margin-bottom: 40px;
     }
 }
 
@@ -62,6 +63,7 @@ h2,
 
     @media (min-width: $breakpoint-lg) {
         font-size: 4rem;
+        margin-bottom: 40px;
     }
 }
 
@@ -108,13 +110,13 @@ p {
 
 /* Enlaces */
 a {
-    color: #cc002c;
+    color: $secondaryColor;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 a:hover {
-    color: #5701c9;
+    color: $tertiaryColor;
 }
 
 /* Texto destacado */

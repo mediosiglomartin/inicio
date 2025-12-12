@@ -5,7 +5,7 @@ $(document).ready(function () {
     $(window).on('scroll', function () {
         if ($(window).scrollTop() >= 150) {
             $('.header').addClass('show');
-        } else {
+        } else if ($(window).scrollTop() < 150 && !$('#menu').hasClass('open')) {
             $('.header').removeClass('show');
         }
     });

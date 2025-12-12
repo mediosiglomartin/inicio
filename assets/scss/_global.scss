@@ -3,3 +3,33 @@
 body {
     position: relative;
 }
+
+.inner {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2rem;
+    background-color: $secondaryColor;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: $tertiaryColor;
+        color: #fff;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+        padding: 20px;
+        font-size: 2.5rem;
+    }
+}
