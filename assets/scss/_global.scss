@@ -4,6 +4,12 @@ body {
     position: relative;
 }
 
+img,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
 .inner {
     max-width: 1250px;
     margin: 0 auto;

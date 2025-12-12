@@ -23,6 +23,7 @@ $(document).ready(function () {
 
     // Smooth scroll
     $('a[href^="#"]').on('click', function (e) {
+        $('#menu').removeClass('open');
         const target = $(this.getAttribute('href'));
 
         if (this.getAttribute('href') === "#" || this.getAttribute('href') === "") {

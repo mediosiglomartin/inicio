@@ -5,10 +5,6 @@
     text-align: center;
     margin: 40px 20px;
 
-    &__inner {
-        background-color: $primaryColor;
-    }
-
     &__box {
         display: flex;
         flex-direction: column;
@@ -20,6 +16,7 @@
 
     &__info {
         padding: 30px 25px;
+        background-color: $primaryColor;
 
         .h2,
         .h4 {
@@ -48,8 +45,6 @@
 
     @media (min-width: $breakpoint-md) {
         margin: 60px;
-
-        &__inner {}
 
         &__box {
             flex-direction: row !important;
