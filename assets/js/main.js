@@ -38,6 +38,18 @@ $(document).ready(function () {
         }
     });
 
+    // Block Content Image Slider slider
+    $('.block-content-image-slider .slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 1000,
+        arrows: false,
+        dots: false
+    });
+
+    // Block Photo Slider slider
     $('.block-photo-slider .inner').slick({
         slidesToShow: 3,
         slidesToScroll: 1,

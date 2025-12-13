@@ -35,13 +35,14 @@ h6,
     font-family: "Oxanium", sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: $secondaryColor;
 }
 
 h1,
 .h1 {
     font-size: 4rem;
+    margin-bottom: 30px;
 
     @media (min-width: $breakpoint-md) {
         font-size: 6rem;
