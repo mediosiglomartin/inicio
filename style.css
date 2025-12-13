@@ -413,9 +413,7 @@ iframe {
   margin-bottom: -90px;
 }
 .header.show {
-  background-color: rgba(3, 47, 74, 0.9);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  background-color: #032f4a;
 }
 .header.show .header__logo {
   opacity: 1;
@@ -443,9 +441,7 @@ iframe {
   top: 90px;
   left: 0;
   width: 100%;
-  background-color: rgba(3, 47, 74, 0.9);
-  -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  background-color: #032f4a;
 }
 .header__menu ul {
   padding: 20px;
@@ -601,6 +597,9 @@ iframe {
   color: #fff;
   text-align: center;
   margin: 40px 20px;
+}
+.block-location__inner {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .block-location__box {
   display: flex;
