@@ -497,6 +497,21 @@ iframe {
   }
 }
 
+.footer {
+  padding: 40px 20px 0;
+  background-color: #e1eef5;
+}
+.footer img {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 60px 40px 0;
+  }
+}
+
 .block-intro {
   position: relative;
   color: #fff;

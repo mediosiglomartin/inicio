@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+.footer {
+    padding: 40px 20px 0;
+    background-color: $greyBackground;
+
+    img {
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        padding: 60px 40px 0;
+    }
+}
