@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+$(window).on('load', function () {
 
     // Change Header Backgroun Color
     $(window).on('scroll', function () {
