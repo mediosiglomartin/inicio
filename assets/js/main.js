@@ -55,8 +55,7 @@ $(window).on('load', function () {
         $(`.block-photo-slider#photo-slider-${index} .slider`).slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
+            autoplay: false,
             speed: 1000,
             arrows: true,
             prevArrow: $(`.block-photo-slider #prev-${index}`),

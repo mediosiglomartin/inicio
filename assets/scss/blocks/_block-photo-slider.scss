@@ -3,7 +3,7 @@
 .block-photo-slider {
     background-color: $primaryColor;
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
         background-color: $greyBackground;
 
         .block-photo-slider__top .title {
