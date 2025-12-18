@@ -50,6 +50,37 @@ $(window).on('load', function () {
     });
 
     // Block Photo Slider slider
+    $('.block-photo-slider').each(function (index) {
+
+        $(`.block-photo-slider#photo-slider-${index} .slider`).slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 1000,
+            arrows: true,
+            prevArrow: $(`.block-photo-slider #prev-${index}`),
+            nextArrow: $(`.block-photo-slider #next-${index}`),
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1149,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    });
+
+
+    /*
     $('.block-photo-slider .inner').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -60,4 +91,5 @@ $(window).on('load', function () {
         speed: 5000,
         cssEase: 'linear',
     });
+    */
 });

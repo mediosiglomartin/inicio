@@ -1,11 +1,79 @@
 @use "../variables" as *;
 
 .block-photo-slider {
+    background-color: $primaryColor;
+
+    &:nth-child(odd) {
+        background-color: $greyBackground;
+
+        .block-photo-slider__top .title {
+            color: $primaryColor;
+        }
+    }
 
     &__inner {
+        padding: 40px 20px 40px;
+    }
+
+    &__slider {
+        margin: 0 -10px;
+
         img {
             aspect-ratio: 1 / 1;
             object-fit: cover;
+            margin: 0 10px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 20px;
+
+        .title {
+            color: #FFF;
+            margin-bottom: 0;
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 20px;
+
+        div {
+            background-color: $tertiaryColor;
+            padding: 10px;
+            cursor: pointer;
+            transition: all ease 0.5s;
+
+            &:hover {
+                background-color: $secondaryColor;
+            }
+        }
+
+        .prev {
+            padding-right: 12px;
+        }
+
+        .next {
+            padding-left: 12px;
+        }
+
+        svg {
+            display: block;
+            height: 30px;
+            width: 30px;
+
+            path {
+                stroke: #FFF;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-md) {
+        &__inner {
+            padding: 70px 20px 80px;
         }
     }
 }
